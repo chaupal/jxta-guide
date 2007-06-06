@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE org.jxta:configuration>
+
+<jxta>
+  <peer descriptor="edge" name="MyPeerName" description="MyPeerDescription"/>
+  
+  <transport>
+    <tcp>
+      <address range="100">
+        <multicast>udp://224.0.1.85:1234</multicast>
+      </address>
+      <publicAddress exclusive="false"/>
+    </tcp>
+
+    <http>
+      <address range="100"/>
+      <publicAddress exclusive="false"/>
+      <proxy isEnabled="false"/>
+    </http>
+  </transport>
+  
+  <service/>
+</jxta>
